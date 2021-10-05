@@ -11,7 +11,7 @@ function App() {
       </form>
       <ul><TaskItem isChecked={true} taskName="Learn React"/></ul>
       <ul><TaskItem isChecked={false} taskName="Learn Hooks"/></ul>
-      <ul><TaskItem isChecked={false} taskName="Keep On keeping on"/></ul>
+      <ul><TaskItem isChecked={true} taskName="Keep On keeping on"/></ul>
     </main>
   );
 }
