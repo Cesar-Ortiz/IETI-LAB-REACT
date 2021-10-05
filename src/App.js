@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { TaskItem } from './TaskItem';
 
 function App() {
   return (
@@ -8,14 +9,9 @@ function App() {
         <input type="text" placeholder="Task name"/>
         <button>Create Tak</button>
       </form>
-      <ul>
-        <li><input checked="true" type="checkbox"/>
-        <span>Learn React</span></li>
-        <li><input type="checkbox"/>
-        <span>Learn Hocks</span></li>
-        <li><input type="checkbox"/>
-        <span>Keep on Keeping on</span></li>
-      </ul>
+      <ul><TaskItem isChecked={true} taskName="Learn React"/></ul>
+      <ul><TaskItem isChecked={false} taskName="Learn Hooks"/></ul>
+      <ul><TaskItem isChecked={false} taskName="Keep On keeping on"/></ul>
     </main>
   );
 }
